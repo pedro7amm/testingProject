@@ -21,4 +21,4 @@ steps:
   
 - script: |
     npm run test
-  displayName: 'npm run test'
+  displayName: 'npm run test'
