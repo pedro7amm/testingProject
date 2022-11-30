@@ -5,31 +5,41 @@ module.exports ={
    },
    entradaalbar : function (edad) {
         if (edad >= 18){
-            const validacion="Puede entrar al bar, su edad es "+edad;
+            const validacion=true;
             return validacion;
         }
         else{
-            const negativo= "No puede entrar al bar, su edad es "+edad;
+            const negativo=false;
             return negativo;
         }
     },
     verpelicula : function (edad) {
         if (edad >= 15){
-            const validacion="Puede ver la película, su edad es "+edad;
+            const validacion=true;
             return validacion;
         }
         else{
-            const negativo= "No puede ver la película, su edad es "+edad;
+            const negativo= false;
             return negativo;
         }
     },
     obtenerlicencia : function (edad) {
         if (edad >= 18){
-            const validacion="Puede tener licencia para conducir, su edad es "+edad;
+            const validacion=true;
             return validacion;
         }
         else{
-            const negativo= "No puede tener licencia para conducir, su edad es "+edad;
+            const negativo= false;
+            return negativo;
+        }
+    },
+    votar : function (edad) {
+        if (edad >= 18){
+            const validacion=true;
+            return validacion;
+        }
+        else{
+            const negativo= false;
             return negativo;
         }
     },
