@@ -1,5 +1,5 @@
 const assert = require('assert');
-const funciones = require('../src/funciones');
+const funciones = require('../src/funciones'); //usar {} y dentro el nombre de la función para llamarla directamente
 
 describe('Suite de validaciones de edad', () =>{
     var edad= funciones.numeroAleatorio(0,40);
@@ -11,11 +11,11 @@ describe('Suite de validaciones de edad', () =>{
     it('Validación para entrar a un bar', () =>{
         if (edad >= 18){
             assert.equal(respuestaDelBar,true);
-            console.log("Puede entrar al bar, su edad es "+edad);
+            console.log("Puede entrar al bar, su edad es "+edad);//arrange act assert 
         }
         else {
             assert.equal(respuestaDelBar,false);
-            console.log("No puede entrar al bar, su edad es "+edad);
+            console.log("No puede entrar al bar, su edad es "+edad);//usar chai
         }
     })
     it('Validación para ver películas para mayores de 15', () =>{
