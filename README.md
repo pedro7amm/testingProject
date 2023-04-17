@@ -1,2 +1,2 @@
-# proyectoTesting
+# testingProject
 Testing project with mocha
